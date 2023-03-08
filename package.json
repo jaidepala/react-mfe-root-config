@@ -10,6 +10,8 @@
     "check-format": "prettier --check .",
     "prepare": "husky install",
     "build": "concurrently yarn:build:*",
+    "postbuild": "aws s3 sync dist s3://react-mfe-demo/root-config --no-verify-ssl",
+    "postbuild-temp": "aws s3 cp dist s3://react-mfe-demo/@altusgroup/root-config --recursive --no-verify-ssl",
     "build:webpack": "webpack --mode=production",
     "build:types": "tsc"
   },

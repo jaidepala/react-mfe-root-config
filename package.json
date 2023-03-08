@@ -1,5 +1,8 @@
 {
   "name": "@altusgroup/root-config",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "node server.js",
     "start:dev": "webpack serve --port 9000 --env isLocal",

@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+    - node
+script:
+    - yarn build
+    - echo "Commit sha - $TRAVIS_COMMIT"
+    - mkdir -p dist/@altusgroup/root-config/$TRAVIS_COMMIT
+    - mv dist/*.* dist/@altusgroup/root-config/$TRAVIS_COMMIT/
+deploy:
+    provider: s3
+    access_key_id: "AKIAUPEZKOKAIYRHU4AK"
+    secret_access_key: "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"
+    bucket: "react-mfe-demo"
+    region: "us-east-1"
+    cache-control: "max-age=31536000"
+    acl: "public_read"
+    local_dir: dist
+    skip_cleanup: true
+    on:
+        branch: main

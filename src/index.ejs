@@ -41,7 +41,7 @@
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
 
   <!-- Add your organization's prod import map URL to this script's src  -->
-  <!-- <script type="systemjs-importmap" src="//react-mfe-demo.s3.us-east-1.amazonaws.com/importmap.json?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiSDBGAiEAkqKs8PXATTsTPr0xl2GhDq4IZz1WXn8sM8pfQ86Vz8YCIQDQssF411MO26jnhMwhNCNehPzL%2FDwITi5RA3OxE4yw0yroAgg%2BEAMaDDMwNzQxMTcxMDU5MiIMLz9Z6MeUHAPkskcNKsUCUN1JDj4gomItLzh%2FibwAMum5%2F8uqS6jzSoATDSNMZ5TtbfWO17v9ZbB6SVUD867mPRxcPNp5nl%2F4DkBAeErTsFkypgnmmUZ2K%2Fzxm%2BQPKUE1yhHKmiqRolVsZpdq2Wg3lEkCVOb%2FDXbt%2B5p9VtWy74BMQH2x35xxj4tONCV%2BaOh%2Ff%2FhLet0BaArXXXQsH0dnYBxzJj5i7J6Uc%2FERyOh5ghNTNOT3tTfZqNL3tjKGJBzVq4VXMTPB4AGRyZ2fzKESNzH5AxEi090UCAtTzcwm7NPvT3%2FGNQxGEeksJHNseomSq0Jce7Af5S9bdWHvnh49XCHxYuZPLnyKQNQE9DaZntSNta1uJdfO%2BfepwL3EPiMBXsnqCi733LQPGx1KJqK%2FvGZp6ru3KLHsmXyIpDk%2BXY3PDhspa5tLOEpiJxXlNpbPEO56sjDataCgBjqyAvCAREbQm7c0pcnISrdRuMHfFphilpolWfPgnQqSPIPF4F7v5Cv%2FwSqKj1W5%2BrJNK%2BI%2BZlN1UzlJvtu5IQ9SdN%2F%2BkhTo8%2Bk%2FDzy8iGs1J6fAxpEwzmTucXDUnjjhuxsWOa1MAFvIqojysF5u2h89h2UPItA1iT3OxAQciC5eK5TsrxJI4%2B5QFqBaivmLI9%2BeW7qyFQjakAngH94Sdap17oiHEeh4rz7r92n%2BcqG5bpDQYuuSreOS%2F1TnH3Fi7zGWerHPZb%2Fo%2BY09wRk2urwKU1rT%2Fsx60RbQY0qEVVUgp7v25TnbY0Enp2VUo1hfznqnHQQ4uTFLKArRIcnsuIdX9aI4AyLPSbWjaJ5fnsHouK1iZwxxzHZO9JRoJKwT9JscnMUtsXqa53vVA%2B58qTPABMkulg%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230308T155853Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAUPEZKOKAEDTUVGC2%2F20230308%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a8cb46dbed22550c1e7ac1b5f7bf679ae12fb17836797b73f338d72799a1d194"></script> -->
+  <script type="systemjs-importmap" src="//react-mfe-demo.s3.amazonaws.com/importmap.json"></script>
 
   <% if (isLocal) { %>
   <script type="systemjs-importmap">
@@ -82,7 +82,7 @@
   </noscript>
   <main></main>
   <script>
-    System.import('@single-spa/welcome');
+    System.import('@altusgroup/root-config');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
   <div id="nav-container"></div>
